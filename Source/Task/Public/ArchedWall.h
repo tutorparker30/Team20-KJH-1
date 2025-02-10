@@ -4,7 +4,7 @@
 #include "GameFramework/Actor.h"
 #include "ArchedWall.generated.h"
 
-
+// ¡÷ºÆ
 DECLARE_LOG_CATEGORY_EXTERN(LogTask, Warning, All);
 
 UCLASS()
