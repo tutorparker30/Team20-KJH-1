@@ -56,11 +56,23 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 	FVector Velocity;
 
+	// -- 점프 --
+	// 수직이동-> 점프하는 힘, 중력, 속도
+	/*UPROPERTY(EditAnyWhere, BlueprintReadWirte, Category = "Jump")
+	float JumpForce = 80.0f;
+	UPROPERTY(EditAnyWhere, BlueprintReadWirte, Category = "Jump")
+	float Gravity = -100.0f;
+	UPROPERTY(EditAnyWhere, BlueprintReadWirte, Category = "Jump")
+	FVector VelocityZ;*/
+
+
 	// -- 입력 저장 값 -- 
 	// Move 입력 
 	FVector2D MovementInput;
 	// Look 입력
 	FVector2D LookInput;
+	// Jump 입력
+	FVector2D JumpInput;
 	
 	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;

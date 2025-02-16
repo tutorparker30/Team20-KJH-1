@@ -55,6 +55,10 @@ void ATaskPawn::Tick(float DeltaTime)
 	Velocity = FMath::VInterpTo(Velocity, DesiredVelocity, DeltaTime, VelocityInterpSpeed);
 	// 월드 좌표계에서 이동 처리(충돌 체크 포함)
 	AddActorWorldOffset(Velocity * DeltaTime, true);
+	
+	
+	
+	
 	// Pawn 자체 회전 처리 (마우스 좌우 입력)
 	if (!FMath::IsNearlyZero(LookInput.X))
 	{
